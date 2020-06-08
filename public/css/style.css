@@ -28,7 +28,7 @@ a {
 .cols {
   display: flex;
   justify-content: space-around;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .cols img {
@@ -50,15 +50,14 @@ a {
 .rankings a {
   background: #55efc4;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
 }
 
 footer {
   text-align: center;
   background: #55efc4;
+  margin-top: 20px;
   padding: 20px;
-  position: absolute;
-  bottom: 0px;
   width: 100%;
 }
 

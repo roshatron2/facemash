@@ -69,7 +69,7 @@ function pickedRight() {
 
   leftProfile = Profiles[generateRandomNumber()];
 
-  if (leftProfile === rightProfile) {
+  if (leftProfile._id === rightProfile._id) {
     leftProfile = Profiles[generateRandomNumber()];
   }
 

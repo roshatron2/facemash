@@ -4,8 +4,11 @@ const express = require("express"),
   bodyParser = require("body-parser"),
   Profiles = require("./models/profiles");
 
-const uri =
-  "mongodb+srv://roshatron:roshatron@facemash-nw9vx.mongodb.net/facemash?retryWrites=true&w=majority";
+mongoose.set("debug", true);
+
+// const uri =
+//   "mongodb+srv://roshatron:roshatron@facemash-nw9vx.mongodb.net/facemash?retryWrites=true&w=majority";
+const uri = "mongodb://localhost/facemash";
 
 try {
   mongoose.connect(uri, {
