@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Index Page */
+.nav {
+  text-align: center;
+  height: 10vh;
+  background: #55efc4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+}
+
+.small-head {
+  display: none;
+}
+
+.cols {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20vh;
+}
+
+.cols img {
+  width: 300px;
+}
+
+.name {
+  font-size: 21px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.rankings {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.rankings a {
+  background: #55efc4;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  background: #55efc4;
+  padding: 20px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .cols {
+    flex-direction: column;
+    margin-top: 2vh;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .profile img {
+    /* margin: auto;*/
+    display: block;
+    height: 300px;
+  }
+
+  .big-head {
+    display: none;
+  }
+
+  .small-head {
+    display: block;
+  }
+  .rankings {
+    margin: 15px 0 20px 0;
+  }
+}

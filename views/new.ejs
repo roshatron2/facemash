@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Profile</title>
+    <link rel="stylesheet" href="/css/new.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="/profiles" method="POST" class="profile-form">
+        <h1>Add a New Profile</h1>
+        <input type="text" placeholder="Enter the name" name="name" value="" />
+        <input
+          type="text"
+          placeholder="Enter Image URL"
+          name="image"
+          value=""
+        />
+        <div class="submit-btn">
+          <button type="submit" class="submit-btn">Add Profile</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

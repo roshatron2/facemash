@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/profile.css" />
+  </head>
+  <body>
+    <nav>
+      <a class="back-btn" href="/">Back</a>
+      <h1>ELO Rankings</h1>
+    </nav>
+    <div class="container">
+      <% profiles.forEach(profile =>{ %>
+      <div class="card">
+        <!-- <span id="rank">1.</span> -->
+        <div><%= profile.name %></div>
+        <div><%= Math.round(profile.rating) %></div>
+        <img src="<%= profile.image %>"" alt="" />
+      </div>
+      <% })%>
+    </div>
+  </body>
+</html>
